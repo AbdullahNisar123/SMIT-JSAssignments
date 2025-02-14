@@ -463,8 +463,8 @@ otherwise the value of voteable should be "Old enough"
 
 // Answer:
 
-let age = +prompt("What is your age")
-alert((age < 18) ? "Too young" : "Old Enough")
+// let age = +prompt("What is your age")
+// alert((age < 18) ? "Too young" : "Old Enough")
 
 
 
