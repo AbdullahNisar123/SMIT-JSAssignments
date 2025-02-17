@@ -187,7 +187,7 @@ e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
 // document.write("<br />")
 // for(let i = 0; i <=20; i++){
 //     if(i%2 !== 0) document.write(`${i}, `)
-    
+
 // }
 // document.write("<br />")
 
@@ -195,7 +195,7 @@ e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
 // document.write("<br />")
 // for(let i = 1; i<= 20; i++){
 //     if(i%2 === 0)document.write(`${i}K, `)
-    
+
 // }
 /*
 
@@ -292,5 +292,192 @@ A = [24, 53, 78, 91, 12]
 */
 
 // Answer:
+
+
+// let numbers = [24, 53, 78, 91, 12, 13, 29, 30, 31]
+// let smallest = 100
+// let largest = 2
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < smallest) {
+//         smallest = numbers[i]
+//     }
+//     else if (numbers[i] > largest) {
+//         largest = numbers[i]
+//     }
+// }
+// console.log("number array", numbers)
+// console.log("smallest number is ", smallest)
+// console.log("largest number is ", largest)
+
+
+/*
+Question: 12
+
+Write a program to print multiples of 5 ranging 1 to 100
+
+
+*/
+
+// Answer:
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 5 === 0) {
+//         console.log(i)
+//     }
+// }
+
+
+
+/*
+Question: 13
+
+You have given the following arrays:
+var students = ["Ali", "Sami", "Taha", "Inam"];
+var scores = [58, 73, 89, 90];
+
+Write a program to generate the following HTML table in your
+browser using JS.
+
+*/
+
+// Answer:
+
+
+/*
+Question: 14
+
+Write a program that prints number from start of the array
+to desired stop value. Given array:
+var scores = [12, 45, 3, 22, 34, 50];
+(Hint: take stop value from user)
+E.g. if user gives 3 as input value print 12, 45, 3
+if user gives 34 as input value print 12, 45, 3, 22, 34
+
+*/
+
+// Answer:
+
+// let scores = [12, 45, 3, 22, 34, 50];
+// let userInput = +prompt("what is the end point")
+// let result = []
+// for (let i = 0; i < scores.length; i++) {
+//     result.push(scores[i])
+//     if (userInput === scores[i]) {
+
+//         break;
+//     }
+// }
+// console.log(result)
+
+
+/*
+Question: 15
+
+You have an array
+A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+Write each element on new line with the help of nested for
+loops.
+
+*/
+
+// Answer:
+
+
+/*
+Question: 16
+
+Write a program to repeatedly print the value of the variable
+num which is input by user. Value should be decreasing by 0.5
+each time, as long as x Value remains positive.
+
+*/
+
+// Answer:
+
+// let num = +prompt("give the number")
+// for(let i = num; i >= 0 ; i -= 0.5){
+//     console.log(i)
+// }
+
+
+
+/*
+Question: 17
+
+The even/odd reporter
+Write a for loop that will iterate from 0 to 20. For each
+iteration, it will check if the current number is even or odd, and
+report that to the screen (e.g. "2 is even").
+
+*/
+
+// Answer:
+
+// for(let i = 0; i <= 20; i++){
+//     if(i%2 === 0){
+//         console.log(`${i} is even`)
+//     }
+//     else{
+//         console.log(`${i} is Old`)
+//     }
+
+// }
+
+
+/*
+Question: 18
+
+Write a program to calculate the product of the odd integers
+from 1 to 7.
+
+*/
+
+// Answer:
+
+
+
+/*
+Question: 19
+
+Write a program that will write out a wedge of stars. The user
+will enter the initial number of stars, and the program will write
+out lines of stars where each line has one few star than the
+previous line. Initial number of stars: 7
+
+
+*/
+
+// Answer:
+
+// let userInput = +prompt("how many star you want")
+
+// for(let i = userInput; i > 0 ; i--){
+//     console.log("*".repeat(i))
+// }
+
+/*
+Question: 20
+
+Write a program to create the following patterns in your
+browser. Take number of lines as an input.
+
+*/
+
+// Answer:
+
+// let userInput = +prompt("how many lines you want")
+
+// for(let i = userInput; i > 0; i--){
+//     console.log("*".repeat(4))
+// }
+
+// for(let i = userInput; i > 0 ; i--){
+//     console.log("*".repeat(i))
+// }
+
+// for(let i = 1; i <= userInput ; i++){
+//     console.log("*".repeat(i))
+// }
+
 
 ///                      Assignment 18-20 END
