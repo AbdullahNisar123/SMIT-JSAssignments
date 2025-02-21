@@ -382,6 +382,15 @@ loops.
 
 // Answer:
 
+// let num  = [ [1,2,3],[4,5,6],[7,8,9]]
+
+// for(let i = 0;i < num.length; i++){
+//     // console.log(num[i])
+//     let insidearr = num[i];
+//     for(let j = 0; j < insidearr.length; j++){
+//         console.log(insidearr[j])
+//     }
+// }
 
 /*
 Question: 16
@@ -434,7 +443,12 @@ from 1 to 7.
 
 // Answer:
 
-
+// let userInput = +prompt("give me the number")
+// let multi = 1
+// for(let i = 1; i <= userInput; i++){
+// if( i % 2 !== 0) multi = multi * i
+// }
+// console.log(multi) 
 
 /*
 Question: 19
