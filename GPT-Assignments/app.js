@@ -219,3 +219,37 @@ Write a function that finds the common elements between two arrays.
 // }
 // console.log(arr1,arr2)
 // console.log(common)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let students = ['imran', 'imran', 'imran', 'abdullah', 'aslam', 'imran', 'adnan'];
+
+// let matcCount = 0;
+// let reqName = "imran"
+// let reqIndex = 4
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i] === reqName && matcCount < reqIndex) {
+//         matcCount++
+//         if (matcCount === reqIndex) {
+//             console.log(`${reqName} is at index ${i}`)
+//             break;
+//         }
+//     }
+// }
+// console.log(students)
