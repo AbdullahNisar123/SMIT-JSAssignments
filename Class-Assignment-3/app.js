@@ -40,28 +40,45 @@ show on Dom
 
 
 /*
+generate random numbers 1 to 6 
+then make condition to change img src accouding to the number
 */
 
-let imgEle = document.querySelectorAll('img')[0]
-function spinDisc() {
-    let num = Math.ceil(Math.random() * 6)
-    if (num === 1) {
-        imgEle.src = "/images/disc1.png"
-    }
-    else if (num === 2) {
-        imgEle.src = "/images/disc2.png"
-    }
-    else if (num === 3) {
-        imgEle.src = "/images/disc3.png"
-    }
-    else if (num === 4) {
-        imgEle.src = "/images/disc4.png"
-    }
-    else if (num === 5) {
-        imgEle.src = "/images/disc5.png"
-    }
-    else if (num === 6) {
-        imgEle.src = "/images/disc6.png"
-    }
-    console.log(num)
-}
+// let imgEle = document.querySelectorAll('img')[0]
+// function spinDisc() {
+//     let num = Math.ceil(Math.random() * 6)
+//     if (num === 1) {
+//         imgEle.src = "/images/disc1.png"
+//     }
+//     else if (num === 2) {
+//         imgEle.src = "/images/disc2.png"
+//     }
+//     else if (num === 3) {
+//         imgEle.src = "/images/disc3.png"
+//     }
+//     else if (num === 4) {
+//         imgEle.src = "/images/disc4.png"
+//     }
+//     else if (num === 5) {
+//         imgEle.src = "/images/disc5.png"
+//     }
+//     else if (num === 6) {
+//         imgEle.src = "/images/disc6.png"
+//     }
+//     console.log(num)
+// }
+
+
+
+
+// let para = "Lorem ipsum dolor sit amet World War II consectetur adipisicing elit. Illum fuga excepturi esse! Vitae World War II eveniet impedit iure  erosimilique, World War II ab voluptatibus dolores quisquam World War II optio eaque rerum, explicabo a molestias id World War II unde!"
+
+// let findword = "World War II"
+// let replaceword = "the Second World War"
+
+// for( let i = 0 ; i < para.length; i++){
+//     if(para.slice(i,i + findword.length) === findword){
+//         para = para.slice(0,i) + replaceword + para.slice(i + findword.length)
+//     }
+// }
+// console.log(para)
