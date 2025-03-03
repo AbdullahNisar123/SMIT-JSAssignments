@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+        align-items: center;
+        }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 50%;
+        padding: 20px;
+        margin: 20px 0px;
+      }
+      h2{
+        font-size: 34px;
+      }
+      img {
+        width: 200px;
+        height: auto;
+      }
+      p{
+        font-size: 24px;
+      }
+      button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 500;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .vs{
+        font-size: 48px;
+        font-weight: 700;
+        color: red;
+      }
+      h3{
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .center-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock_Paper_Scissor</h1>
+    <div class="container">
+      <div class="teamA">
+        <img src="images/paper.png" alt="" class="teamAImg" />
+        <h2>Team A</h2>
+        <p>Score: <span class="teamAScore">0</span></p>
+      </div>
+      <div class="center-container">
+        <p class="vs">vs.</p>
+        <h3 class="winnerName">Start...</h3>
+    </div>
+      <div class="teamB">
+        <img src="images/scissors.png" alt="" class="teamBImg"/>
+        <h2>Team B</h2>
+        <p >Score: <span class="teamBScore">0</span></p>
+      </div>
+    </div>
+    <button onclick="play()">Play</button>
+    <script src="app.js"></script>
+  </body>
+</html>
