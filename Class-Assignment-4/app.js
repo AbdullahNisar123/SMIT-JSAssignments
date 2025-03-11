@@ -17,6 +17,7 @@ function play(user) {
     let num2 = Math.ceil(Math.random() * 3);
     // console.log(num1)
     // console.log(num2)
+    
     // select items
     if (num1 === rock) {
         TeamA.src = rockImg
