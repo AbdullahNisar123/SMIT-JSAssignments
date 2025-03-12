@@ -255,3 +255,91 @@ Write a function that finds the common elements between two arrays.
 // console.log(students)
 
 
+
+//                    data and time questions
+
+/*
+question: 1
+
+Write a JavaScript program to display the current date and time in the format: YYYY-MM-DD HH:MM:SS.
+
+*/
+
+// Answer:
+
+// let dateTime = document.querySelectorAll("h2")[0]
+
+// dateTime.innerHTML = Date()
+
+/*
+question: 2
+
+Display time in 12-hour format (AM/PM)
+*/
+
+// Answer:
+
+// let time = document.querySelectorAll("h3")[0]
+
+
+// function getTime (){
+//     let now = new Date()
+//     now.setHours(14)
+//     let hours = now.getHours()
+//     let minutes = now.getMinutes()
+//     let seconds = now.getSeconds()
+//     let ampm = hours >= 12 ? "PM" : "AM"
+//     hours = hours % 12 || 12;
+
+//     return `${hours}:${minutes}:${seconds} ${ampm}`;
+// }
+// let result = getTime()
+// console.log(result)
+// time.innerHTML = getTime()
+/*
+question: 3
+
+Calculate Days Between Two Dates
+
+Task: Write a function that finds the difference (in days) between two given dates.
+
+*/
+
+// Answer:
+
+// let date1 = document.querySelectorAll("input")[0]
+// let date2 = document.querySelectorAll("input")[1]
+// let msg = document.querySelectorAll("h3")[0]
+// function check() {
+//     let seconds1 = new Date(date1.value).getTime()
+//     let seconds2 = new Date(date2.value).getTime()
+//     let minseconds = seconds2 - seconds1
+//     let remmainDays = minseconds / (1000 * 60 * 60 * 24)
+//     msg.innerHTML = remmainDays
+
+// }
+/*
+question: 4
+
+Age Calculator
+Task: Let the user enter their birthdate and calculate their exact age (years, months, days).
+
+*/
+
+// Answer:
+
+// let userInput = document.querySelectorAll("input")[0]
+// let msg = document.querySelectorAll("h3")[0]
+
+// function check() {
+//     let birthday = new Date(userInput.value).getTime()
+//     let now = new Date().getTime()
+//     let milliseconds = now - birthday;
+//     let years = Math.floor(milliseconds / 31536000000)
+//     let months = Math.floor(years * 12)
+//     let days = Math.floor(milliseconds / (1000 * 60 * 60 * 24))
+//     msg.innerHTML = `I am ${years} years, ${months} months and ${days} days ago`
+
+// }
+
+
