@@ -442,25 +442,117 @@ table at the end of this document.
 // Answer:
 
 
-let password = document.querySelectorAll("input")[0];
-let msg = document.querySelectorAll("p")[0];
+// let password = document.querySelectorAll("input")[0];
+// let msg = document.querySelectorAll("p")[0];
 
-function check() {
-    msg.innerHTML = ""; 
+// function check() {
+//     msg.innerHTML = ""; 
 
-    let validRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/;
+//     let validRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/;
 
-    if (password.value.length < 6) {
-        msg.innerHTML += `Password should be at least 6 characters long <br />`;
+//     if (password.value.length < 6) {
+//         msg.innerHTML += `Password should be at least 6 characters long <br />`;
+//     }
+
+//     if (!validRegex.test(password.value)) {
+//         msg.innerHTML += `Password should contain only letters and numbers <br />`;
+//     }
+
+//     if (/[0-9]/.test(password.value[0])) {
+//         msg.innerHTML += `Password should not start with a number`;
+//     }
+// }
+
+
+
+/*
+Question 21
+
+Write a program to convert the following string to an array 
+using string split method. 
+        var university = “University of Karachi”; 
+Display the elements of array in your browser.
+
+*/
+
+// Answer:
+
+
+// let uni = "University of Karachi"
+// let chr = document.querySelectorAll("ul")[0]
+
+// let uniArray = uni.split("")
+// for(let i = 0; i<uniArray.length; i++){
+//     chr.innerHTML += `<li>${uniArray[i]}</li>`
+// }
+// console.log(uniArray)
+
+
+
+/*
+Question 22
+
+Write a program to display the last character of a user input.
+*/
+
+// Answer:
+
+
+// let userInput = document.querySelectorAll("input")[0]
+// let msg = document.querySelectorAll("p")[0]
+
+// function getLast (){
+//     let userValue = userInput.value
+//     let lastCharacter = userValue[userValue.length - 1]
+//     msg.innerHTML = lastCharacter
+// }
+
+
+
+/*
+Question 23
+You have a string “The quick brown fox jumps over the lazy 
+dog”. Write a program to count number of occurrences of word 
+“the” in given string. 
+*/
+
+// Answer:
+
+// let string = "The quick brown fox jumps over the lazy dog and the cat"
+// let findWord = "the"
+// let lowerCase = string.toLowerCase()
+// let count = 0
+// for (let i = 0; i < lowerCase.length; i++) {
+//     if (lowerCase.slice(i, i + findWord.length) == findWord) {
+//         count += 1
+//     }
+// }
+// console.log(count)
+
+
+
+
+/*
+Question 24
+Write a program to count number of vowels & consonants in 
+given string 
+          var str = “Pakistan”;
+*/
+
+// Answer:
+
+let str = "Pakistan"
+let vowels = ["a","e","i","o","u"]
+let count = 0
+for(let i = 0 ; i < str.length ; i++){
+    for(let j = 0; j < vowels.length; j++){
+        if(str.toLowerCase()[i] == vowels[j]){
+            count += 1
+            console.log(str[i],vowels[j],"inside if")
+        }
+        console.log(vowels[j],str[i])
     }
 
-    if (!validRegex.test(password.value)) {
-        msg.innerHTML += `Password should contain only letters and numbers <br />`;
-    }
-
-    if (/[0-9]/.test(password.value[0])) {
-        msg.innerHTML += `Password should not start with a number`;
-    }
 }
-
+console.log(count)
 //                             End Assignment 20 - 25
