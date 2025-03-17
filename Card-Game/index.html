@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: lightblue;
+      }
+      .images-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      img {
+        width: 310px;
+        height: auto;
+      }
+      .score-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+      h3{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      h1{
+        text-align: center;
+      }
+      img:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        filter: brightness(1.5);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Welcome to the Card Game!</h1>
+      <h3>King: 10 | Queen: 5 | Jach: -5</h3>
+      <div class="images-container">
+        <img
+          src="https://i.pinimg.com/736x/7f/89/c1/7f89c1ae58a1fb6a01e026367807a87b.jpg"
+          alt="img1"
+          id="card-1"
+          onclick="play('card-1')"
+        />
+        <img
+          src="https://i.pinimg.com/736x/7f/89/c1/7f89c1ae58a1fb6a01e026367807a87b.jpg"
+          alt="img2"
+          id="card-2"
+          onclick="play('card-2')"
+        />
+        <img
+          src="https://i.pinimg.com/736x/7f/89/c1/7f89c1ae58a1fb6a01e026367807a87b.jpg"
+          alt="img3"
+          id="card-3"
+          onclick="play('card-3')"
+        />
+      </div>
+      <div class="score-container">
+        <p>Score: <span>0</span></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
