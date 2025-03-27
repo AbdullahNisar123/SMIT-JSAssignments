@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Todo Website!</h1>
+    <div class="main-container">
+      <div class="add-container">
+        <div class="input-container">
+          <input type="text" class="input" />
+          <button onclick="add()">Add Todo</button>
+        </div>
+        <p class="error-msg"></p>
+      </div>
+      <div class="todo-container">
+        <p class="noTaskMsg">No tasks added yet <span class="dots"></span></p>
+        <ol class="task">
+        </ol>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
